@@ -7,71 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Dulce Esquina</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilo.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <p>LA DULCE ESQUINA</p>
-        </div>
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="panificado.html">PANIFICADO</a>
-                </li>
-                <li>
-                    <a href="pasteleria.html">PASTELERIA</a>
-                </li>
-                <li>
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">La Dulce Esquina</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link active" aria-current="page" href="panificado.html">Panificado</a>
+                    <a class="nav-link active" aria-current="page" href="pasteleria.html">Pasteleria</a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <section class="conteiner panificado">
+        <section class="galeriaCarrusel">
+            <div>
+                <h2>Nuestros Productos</h2>
+            </div>
 
-            <p class="pPanificado">Tenemos una amplia variedad de productos, y nos ocupamos de su producción para que nuestros clientes los tengan en su mesa recién elaborados.</p>
-            
-            
-            <div class="galeria1 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado1.jpg" alt="">
-                <h3>Pan</h3>
+            <div id="carouselExampleCaptions" class="carousel slide w-50" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>                  
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/panificado1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Pan</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/panificado2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Pan Baguet</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/panificado3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Donas de chocolates</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/panificado4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Pan de campo</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/panificado5.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Masitas Finas</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/panificado6.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">Magdalena</h5>
+                            <p class="text-dark">Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+                    <span class="visually-hidden ">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
-            <div class="galeria2 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado2.jpg" alt="Pan Baguet">
-                <h3>Pan Baguet</h3>
-            </div>
-            
-            <div class="galeria3 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado3.jpg" alt="Donas de chocolates">
-                <h3>Donas de chocolates</h3>
-            </div>
-            
-            <div class="galeria4 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado4.jpg" alt="Pan de Campo">
-                <h3>Pan de campo</h3>
-            </div>
-            
-            <div class="galeria5 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado5.jpg" alt="Masita Finas">
-                <h3>Masitas Finas</h3>
-            </div>
-            
-            <div class=" galeria6 cardConteiner" data-aos="zoom-in-down">
-                <img src="../img/panificado6.jpg" alt="Magdalena">
-                <h3>Magdalena</h3>
-            </div>
-            
+
         </section>
         
         <section class="banner">
@@ -98,6 +136,9 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 
 </html>

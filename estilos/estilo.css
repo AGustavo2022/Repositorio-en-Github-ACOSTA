@@ -22,8 +22,8 @@ h3 {
 h4 {
     font-size: 1em;
 }
-/* modificado para bootstrap crea clase*/
-.conteiner1 {
+
+.conteiner {
     width: 90%;
     margin: auto;
 }
@@ -42,54 +42,21 @@ body {
         "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr;
-
+   
 }
-/* modificado para bootstrap crea clase*/
-.header {
-    height: 50px;
+
+header {
+    /* height: 50px; */
     grid-area: header;
-    display: grid;
+    /* display: grid;
     grid-template-areas:
     "logo navegacion";
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
-    background-color: beige;
+    background-color: beige; */
 }
 
-.logo {
-    padding-left: 15px;
-    justify-self: start;
-    align-self: center;
-    font-size: 1.5em;
-
-}
-
-.logo:hover{
-    transform: translate(10px);
-    font-weight: bolder;
-}
-
-.navegacion ul li a {
-    padding-right: 20px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: rgba(0, 0, 0, 0.500)
-}
-.navegacion {
-    justify-self: end;
-    align-self: center;
-    gap: 10px;
-}
-.navegacion ul li {
-    display: inline-block;
-}
-
-.navegacion ul li:hover {
-    transform: scale(1.2,1.2);
-}
-/* modificado para bootstrap crea clase*/
-.main {
+main {
     grid-area: main;
     background-color:rgba(245, 245, 220, 0.514);
 }
@@ -243,6 +210,14 @@ footer p {
     grid-area: pPanificado;
     padding-top: 50px;
     padding-bottom: 60px;
+}
+
+.galeriaCarrusel{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .galeria2 {
@@ -441,7 +416,7 @@ footer p {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
     }
-
+   
     header {
         height: auto;
         grid-area: header;
@@ -491,7 +466,7 @@ footer p {
         grid-template-areas:
         "pPanificado pPanificado"
         "galeria1 galeria2"
-        "galeria3 galeria4"
+        "galeria3 galeria4" 
         "galeria5 galeria6";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
@@ -516,8 +491,8 @@ footer p {
             "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
-
-    }
+        
+    }  
     header {
         height: auto;
         grid-area: header;
@@ -572,11 +547,11 @@ footer p {
         display: grid;
         grid-template-areas:
         "pPanificado"
-        "galeria1"
+        "galeria1" 
         "galeria2"
-        "galeria3"
-        "galeria4"
-        "galeria5"
+        "galeria3" 
+        "galeria4" 
+        "galeria5" 
         "galeria6";
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
@@ -588,9 +563,9 @@ footer p {
         display: grid;
         grid-template-areas:
         "pPanificado"
-        "galeria1"
+        "galeria1" 
         "galeria2"
-        "galeria3"
+        "galeria3" 
         "galeria4";
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr 1fr 1fr 1fr;
