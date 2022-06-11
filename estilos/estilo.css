@@ -46,14 +46,9 @@ body {
 }
 
 header {
-    /* height: 50px; */
+    
     grid-area: header;
-    /* display: grid;
-    grid-template-areas:
-    "logo navegacion";
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
-    background-color: beige; */
+    
 }
 
 main {
@@ -80,7 +75,7 @@ main {
 }
 
 .sectionPrincipal {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 50px;
     display: grid;
     grid-template-areas:
@@ -94,6 +89,8 @@ main {
 
 .textH2 {
     grid-area: textH2;
+    text-align: center;
+    padding-bottom: 20px;
 
 }
 
@@ -181,18 +178,10 @@ footer p {
     justify-content: center;
 }
 
-.panificado {
-    display: grid;
-    grid-template-areas:
-    "pPanificado pPanificado pPanificado"
-    "galeria1 galeria2 galeria3"
-    "galeria4 galeria5 galeria6";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    justify-items: center;
-    gap: 20px;
-    padding-bottom: 50px;
+.parrafo {
+    
 }
+
 .pasteleria {
     display: grid;
     grid-template-areas:
@@ -212,13 +201,6 @@ footer p {
     padding-bottom: 60px;
 }
 
-.galeriaCarrusel{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .galeria2 {
     grid-area: galeria2;
@@ -409,36 +391,20 @@ footer p {
         font-family: 'Roboto', sans-serif;
         display: grid;
         grid-template-areas:
-            "header header"
-            "main   main"
-            "banner banner"
-            "footer footer";
-        grid-template-columns: 1fr 1fr;
+            "header"
+            "main"
+            "banner"
+            "footer";
+        grid-template-columns: 1fr;
         grid-template-rows: auto 1fr 1fr 1fr;
     }
    
     header {
-        height: auto;
+       
         grid-area: header;
-        display: grid;
-        grid-template-areas:
-        "logo"
-        "navegacion";
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr 1fr;
-        background-color: beige;
+
     }
-    .logo {
-        padding-top: 15px;
-        justify-self: center;
-        align-self: center;
-        font-size: 1.5em;
-    }
-    .navegacion {
-        justify-self: center;
-        align-self: center;
-        gap: 10px;
-    }
+    
     .sectionPrincipal {
         padding-top: 30px;
         padding-bottom: 50px;
@@ -494,32 +460,10 @@ footer p {
         
     }  
     header {
-        height: auto;
         grid-area: header;
-        display: grid;
-        grid-template-areas:
-        "logo"
-        "navegacion";
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto 1fr;
-        background-color: beige;
+        
     }
-    .logo {
-        padding-top: 15px;
-        justify-self: center;
-        align-self: center;
-        font-size: 1.5em;
-    }
-    .navegacion {
-        text-align: center;
-        justify-self: center;
-        align-self: center;
-        gap: 10px;
-        padding-bottom: 10px;
-    }
-    .navegacion ul li {
-        display: block;
-    }
+   
     .sectionPrincipal {
         padding-top: 30px;
         padding-bottom: 50px;
@@ -543,22 +487,7 @@ footer p {
         grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
-    .panificado {
-        display: grid;
-        grid-template-areas:
-        "pPanificado"
-        "galeria1" 
-        "galeria2"
-        "galeria3" 
-        "galeria4" 
-        "galeria5" 
-        "galeria6";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 20px;
-        padding-bottom: 50px;
-    }
+
     .pasteleria {
         display: grid;
         grid-template-areas:
