@@ -150,13 +150,17 @@ main {
 }
 /* Panificado */
 .menuCarta {
+    max-width: 500px;
     margin: auto;
     padding: 40px;
-    width: 500px;
     height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.menuCarta .carta {
+    border: 1px solid black;
+    border-radius: 10px;
 }
 /* Pasteleria */
 .pasteleria {
