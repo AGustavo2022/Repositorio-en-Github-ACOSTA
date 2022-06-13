@@ -1,359 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-}
-
-h1 {
-  font-size: 4.5em;
-}
-
-h2 {
-  font-size: 3em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1em;
-}
-
-.conteiner {
-  width: 90%;
-  margin: auto;
-}
-
-body {
-  max-width: 1400px;
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "header" "main" "banner" "footer";
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: auto 1fr 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr 1fr;
-}
-
-header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-}
-
-main {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: main;
-  background-color: rgba(245, 245, 220, 0.514);
-}
-
-/* Inicio */
-.hero {
-  max-width: auto;
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img1.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: white;
-  font-family: 'Macondo', cursive;
-}
-
-.sectionPrincipal {
-  padding-top: 20px;
-  padding-bottom: 50px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "textH2 textH2" "articulo1 img1" "img2 articulo2" "articulo3 img3";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto 1fr 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.textH2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: textH2;
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.articulo1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: articulo1;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-}
-
-.img1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: img1;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  width: 100%;
-}
-
-.img2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: img2;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  width: 100%;
-}
-
-.articulo2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: articulo2;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-}
-
-.articulo3 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: articulo3;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-}
-
-.img3 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: img3;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  width: 100%;
-}
-
-.parrafo {
-  padding-top: 20px;
-  text-align: center;
-}
-
-/* Nosotros */
-.heroNosotros {
-  max-width: auto;
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img3.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: white;
-  font-family: 'Macondo', cursive;
-}
-
-.sobreNosotros {
-  padding-bottom: 25px;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pnosotros {
-  text-align: center;
-}
-
-/* Panificado */
-.menuCarta {
-  max-width: 500px;
-  margin: auto;
-  padding: 40px;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-.menuCarta .carta {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-/* Pasteleria */
-.pasteleria {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "pPanificado pPanificado" "galeria1 galeria2" "galeria3 galeria4";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: auto 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr;
-  justify-items: center;
-  gap: 30px;
-  padding-bottom: 50px;
-}
-
-.cardConteiner {
-  margin: auto;
-  padding: 20px;
-  width: 200px;
-  height: 350px;
-  border: 1px solid black;
-  background-color: rgba(255, 166, 0, 0.205);
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-}
-
-.pPanificado {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: pPanificado;
-  padding-top: 50px;
-  padding-bottom: 60px;
-}
-
-.pGaleria1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: galeria1;
-}
-
-.pGaleria2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: galeria2;
-}
-
-.pGaleria3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: galeria3;
-}
-
-.pGaleria4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: galeria4;
-}
-
-/* Contacto */
-.contacto {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* Banner */
-.bannerContener {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "banner1 banner2";
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-}
-
-.banner {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: banner;
-}
-
-.banner1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: banner1;
-  width: 100%;
-}
-
-.banner2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: banner2;
-  width: 100%;
-}
-
-.bannerImg {
-  width: 100%;
-  height: auto;
-}
-
-/* Footer */
-footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: footer;
-}
-
-footer p {
-  padding: 20px;
-  text-align: center;
-}
-
-/* Animaciones y Transiciones */
 .fieldset {
   width: 350px;
   height: 300px;
@@ -507,6 +153,352 @@ footer p {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "banner" "footer";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+.conteiner {
+  width: 90%;
+  margin: auto;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-color: rgba(245, 245, 220, 0.514);
+}
+
+.hero {
+  max-width: auto;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Macondo', cursive;
+}
+
+.sectionPrincipal {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "textH2 textH2" "articulo1 img1" "img2 articulo2" "articulo3 img3";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.textH2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: textH2;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.articulo1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: articulo1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.img1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 100%;
+}
+
+.img2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 100%;
+}
+
+.articulo2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: articulo2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.articulo3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: articulo3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.img3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: img3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 100%;
+}
+
+.parrafo {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.heroNosotros {
+  max-width: auto;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img3.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Macondo', cursive;
+}
+
+.sobreNosotros {
+  padding-bottom: 25px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sobreNosotros .pnosotros {
+  text-align: center;
+}
+
+.menuCarta {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.menuCarta .carta {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.pasteleria {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "pPanificado pPanificado" "galeria1 galeria2" "galeria3 galeria4";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.cardConteiner {
+  margin: auto;
+  padding: 20px;
+  width: 200px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: rgba(255, 166, 0, 0.205);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.pPasteleria {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pPanificado;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.pGaleria1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: galeria1;
+}
+
+.pGaleria2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: galeria2;
+}
+
+.pGaleria3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: galeria3;
+}
+
+.pGaleria4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: galeria4;
+}
+
+.contacto {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+footer p {
+  padding: 20px;
+  text-align: center;
+}
+
+.banner {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: banner;
+}
+
+.banner .bannerContener {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "banner1 banner2";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.banner1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: banner1;
+  width: 100%;
+}
+
+.banner2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: banner2;
+  width: 100%;
+}
+
+.bannerImg {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 800px) {

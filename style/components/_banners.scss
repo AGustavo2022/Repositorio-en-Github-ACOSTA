@@ -1,0 +1,24 @@
+.banner {
+    grid-area: banner;
+.bannerContener{
+    display: grid;
+    grid-template-areas:
+    "banner1 banner2";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    }
+}   
+.banner1{
+    grid-area: banner1;
+    width: 100%;
+}
+.banner2 {
+    grid-area: banner2;
+    width: 100%;
+}
+.bannerImg{
+    width: 100%;
+    height: auto;    
+}
+    
+
