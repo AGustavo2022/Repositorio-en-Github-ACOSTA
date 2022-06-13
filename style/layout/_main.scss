@@ -115,7 +115,7 @@ main {
     flex-direction: column;
     text-align: center;
     .carta {
-    border: 1px solid black;
+    border: $border-caja;
     border-radius: 10px;
     } 
 }
@@ -137,7 +137,7 @@ main {
     padding: 20px;
     width: 200px;
     height: 350px;
-    border: 1px solid black;
+    border: $border-caja;
     background-color: rgba(255, 166, 0, 0.205);
     border-radius: 10px;
     display: flex;
