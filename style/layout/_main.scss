@@ -1,28 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-
-}
-
-h1 {
-    font-size: 4.5em;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-h4 {
-    font-size: 1em;
-}
-
 .conteiner {
     width: 90%;
     margin: auto;
@@ -42,9 +17,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr 1fr;
    
-}
-header { 
-    grid-area: header;  
 }
 main {
     grid-area: main;
@@ -80,45 +52,45 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr 1fr 1fr;
     justify-items: center;
-}
-.textH2 {
-    grid-area: textH2;
-    text-align: center;
-    padding-bottom: 25px;
-}
-.articulo1 {
-    grid-area: articulo1;
-    align-self: center;
-    text-align: center;
-}
-.img1 {
-    grid-area: img1;
-    justify-self: start;
-    width: 100%;
-}
-.img2 {
-    grid-area: img2;
-    justify-self: end;
-    width: 100%;
-}
-.articulo2 {
-    grid-area: articulo2;
-    align-self: center;
-    text-align: center;
-}
-.articulo3 {
-    grid-area: articulo3;
-    align-self: center;
-    text-align: center;
-}
-.img3 {
-    grid-area: img3;
-    justify-self: start;
-    width: 100%;
-}
-.parrafo {
-    padding-top: 20px;
-    text-align: center;
+    .textH2 {
+        grid-area: textH2;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .articulo1 {
+        grid-area: articulo1;
+        align-self: center;
+        text-align: center;
+    } 
+    .parrafo {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .articulo2 {
+        grid-area: articulo2;
+        align-self: center;
+        text-align: center;
+    }
+    .articulo3 {
+        grid-area: articulo3;
+        align-self: center;
+        text-align: center;    
+        }
+    .img1 {
+        grid-area: img1;
+        justify-self: start;
+        width: 100%;
+    } 
+    .img2 {
+        grid-area: img2;
+        justify-self: end;
+        width: 100%;
+    }
+    .img3 {
+        grid-area: img3;
+        justify-self: start;
+        width: 100%
+    }
 }
 /* Nosotros */
 .heroNosotros {
@@ -144,9 +116,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.pnosotros {
-    text-align: center;
+    .pnosotros {
+        text-align: center;
+    }
 }
 /* Panificado */
 .menuCarta {
@@ -157,10 +129,10 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-.menuCarta .carta {
-    border: 1px solid black;
-    border-radius: 10px;
+    .carta {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
 }
 /* Pasteleria */
 .pasteleria {
@@ -174,36 +146,36 @@ main {
     justify-items: center;
     gap: 30px;
     padding-bottom: 50px;
-}
-.cardConteiner {
-    margin: auto;
-    padding: 20px;
-    width: 200px;
-    height: 350px;
-    border: 1px solid black;
-    background-color: rgba(255, 166, 0, 0.205);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-}
-.pPanificado {
-    grid-area: pPanificado;
-    padding-top: 50px;
-    padding-bottom: 60px;
-}
-.pGaleria1 {
-    grid-area: galeria1;
-}
-.pGaleria2 {
-    grid-area: galeria2;
-}
-.pGaleria3 {
-    grid-area: galeria3;
-}
-.pGaleria4 {
-    grid-area: galeria4;
+    .pPanificado {
+        grid-area: pPanificado;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .cardConteiner {
+        margin: auto;
+        padding: 20px;
+        width: 200px;
+        height: 350px;
+        border: 1px solid black;
+        background-color: rgba(255, 166, 0, 0.205);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .pGaleria1 {
+        grid-area: galeria1;
+    }
+    .pGaleria2 {
+        grid-area: galeria2;
+    }
+    .pGaleria3 {
+        grid-area: galeria3;
+    }
+    .pGaleria4 {
+        grid-area: galeria4;
+    }
 }
 /* Contacto */
 .contacto {
@@ -219,29 +191,21 @@ main {
     "banner1 banner2";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-}
-.banner {
-    grid-area: banner;
-}
-.banner1{
-    grid-area: banner1;
-    width: 100%;
-}
-.banner2 {
-    grid-area: banner2;
-    width: 100%;
-}
-.bannerImg{
-    width: 100%;
-    height: auto;
-}
-/* Footer */
-footer {
-    grid-area: footer;
-}
-footer p {
-    padding: 20px;
-    text-align: center;
+    .banner {
+        grid-area: banner;
+    }
+    .banner1{
+        grid-area: banner1;
+        width: 100%;
+    }
+    .banner2 {
+        grid-area: banner2;
+        width: 100%;
+    }
+    .bannerImg{
+        width: 100%;
+        height: auto;
+    }
 }
 /* Animaciones y Transiciones */
 .fieldset {
@@ -391,67 +355,4 @@ footer p {
       -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out;
     }
-}
-
-
-@media screen and (max-width: 800px){
-
-    .bannerContener{
-        display: grid;
-        grid-template-areas:
-        "banner1"
-        "banner2";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-    }
-}
-
-@media screen and (max-width: 480px){
-
-    .sectionPrincipal {
-        padding-top: 20px;
-        padding-bottom: 50px;
-        display: grid;
-        grid-template-areas:
-            "textH2"
-            "img1"
-            "articulo1"
-            "img2"
-            "articulo2"
-            "img3"
-            "articulo3";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        row-gap: 15px;
-    }
-    .textH2 {
-        font-size: 0.8em;
-    }
-    .bannerContener{
-        display: grid;
-        grid-template-areas:
-        "banner1"
-        "banner2";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-    }
-
-    .pasteleria {
-        display: grid;
-        grid-template-areas:
-        "pPanificado"
-        "galeria1" 
-        "galeria2"
-        "galeria3" 
-        "galeria4";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 30px;
-        padding-bottom: 50px;
-    }
-
 }

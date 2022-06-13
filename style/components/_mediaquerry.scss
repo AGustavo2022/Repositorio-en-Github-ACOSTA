@@ -1,0 +1,61 @@
+@media screen and (max-width: 800px){
+
+    .bannerContener{
+        display: grid;
+        grid-template-areas:
+        "banner1"
+        "banner2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .sectionPrincipal {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-areas:
+            "textH2"
+            "img1"
+            "articulo1"
+            "img2"
+            "articulo2"
+            "img3"
+            "articulo3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 15px;
+    }
+    .textH2 {
+        font-size: 0.8em;
+    }
+    .bannerContener{
+        display: grid;
+        grid-template-areas:
+        "banner1"
+        "banner2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .pasteleria {
+        display: grid;
+        grid-template-areas:
+        "pPanificado"
+        "galeria1" 
+        "galeria2"
+        "galeria3" 
+        "galeria4";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+
+}
