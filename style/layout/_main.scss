@@ -22,7 +22,7 @@ main {
     align-items: center;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: 'Macondo', cursive;
+    font-family: $font-hero;
 }
 .sectionPrincipal {
     padding-top: 20px;
@@ -93,7 +93,7 @@ main {
     align-items: center;
     text-align: center;
     color: rgb(255, 255, 255);
-    font-family: 'Macondo', cursive;
+    font-family: $font-hero;
 }
 .sobreNosotros {
     padding-bottom: 25px;
@@ -168,4 +168,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    .formulario {
+        width: 50%;
+    }
 }

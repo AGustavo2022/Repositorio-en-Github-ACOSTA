@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
@@ -31,50 +31,47 @@
             </div>
           </nav>
     </header>
-    
+
     <main>
+        
         <section class="conteiner contacto">
 
             <form class="formulario">
-                <fieldset class="fieldset">
-                    
-                    <legend>Contactanos</legend>
-                    
-                    <form>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" />
-                        <br>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" />
-                        <br>
-                        <label for="comentario">Comentarios:</label>
-                        <input type="text" name="comentario" />
-                    </form>
-                    <br>
-                    
-                    <br>
-                    <form>
-                        <div>Acepta términos y condiciones</div>
-                        <input type="checkbox" name="acepta" value="1" />
-                    </form>
-                    <br>
-                    <form>
-                        <input type="submit" value="Enviar formulario" />
-                    </form>
 
-                </fieldset>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                </div><p></p>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Comentario</label>
+                </div><p></p>
+
+                <button type="submit" class="btn btn-primary">Sign in</button>
+
             </form>
-
+               
         </section>
-        
-    </main>
-    <footer>
+
+        </main>
+        <footer>
         <p class="footer"> 2022 Todos los derechos reservados. Desarrollo Acosta Gustavo</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>

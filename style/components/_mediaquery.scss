@@ -9,6 +9,11 @@
         grid-template-rows: 1fr 1fr;
         justify-items: center;
     }
+    .contacto {
+        .formulario {
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -56,6 +61,11 @@
         justify-items: center;
         gap: 30px;
         padding-bottom: 50px;
+    }
+    .contacto {
+        .formulario {
+            width: 100%;
+        }
     }
 
 }
