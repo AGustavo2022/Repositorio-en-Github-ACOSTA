@@ -113,12 +113,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .pnosotros {
-    text-align: center;
+    h3 {
+        padding-top: 20px;
     }
+    .pnosotros {
+         text-align: center;
+     }
 }
 
 iframe {
+    padding-top: 30px;
     width: 660px;
     height: 415px;
 }
@@ -177,11 +181,16 @@ iframe {
 }
 //CONTACTO
 .contacto {
-    height: 120vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     .formulario {
         width: 50%;
+        text-align: center;
+        h1 {
+            padding-bottom: 15px;
+            font-size: 3em;
+        }
     }
 }

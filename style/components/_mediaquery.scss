@@ -27,9 +27,16 @@
         justify-items: center;
     }
     .contacto {
-        height: 125%;
+        height: auto;
         .formulario {
             width: 100%;
+            height: 100%;
+            h1 {
+                font-size: 2.5em;
+            }
+            h3{
+                font-size: 1.8em;
+            }
         }
     }
 }
@@ -87,6 +94,13 @@
     .contacto {
         .formulario {
             width: 100%;
+            height: 100%;
+            h1 {
+                font-size: 2em;
+            }
+            h3{
+                font-size: 1.5em;
+            }
         }
     }
 

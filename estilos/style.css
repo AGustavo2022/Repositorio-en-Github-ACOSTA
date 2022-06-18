@@ -218,11 +218,16 @@ main {
           align-items: center;
 }
 
+.sobreNosotros h3 {
+  padding-top: 20px;
+}
+
 .sobreNosotros .pnosotros {
   text-align: center;
 }
 
 iframe {
+  padding-top: 30px;
   width: 660px;
   height: 415px;
 }
@@ -307,7 +312,7 @@ iframe {
 }
 
 .contacto {
-  height: 120vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +326,12 @@ iframe {
 
 .contacto .formulario {
   width: 50%;
+  text-align: center;
+}
+
+.contacto .formulario h1 {
+  padding-bottom: 15px;
+  font-size: 3em;
 }
 
 footer {
@@ -399,10 +410,17 @@ footer p {
     justify-items: center;
   }
   .contacto {
-    height: 125%;
+    height: auto;
   }
   .contacto .formulario {
     width: 100%;
+    height: 100%;
+  }
+  .contacto .formulario h1 {
+    font-size: 2.5em;
+  }
+  .contacto .formulario h3 {
+    font-size: 1.8em;
   }
 }
 
@@ -452,6 +470,13 @@ footer p {
   }
   .contacto .formulario {
     width: 100%;
+    height: 100%;
+  }
+  .contacto .formulario h1 {
+    font-size: 2em;
+  }
+  .contacto .formulario h3 {
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
