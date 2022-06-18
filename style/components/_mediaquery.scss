@@ -1,5 +1,22 @@
 @media screen and (max-width: 800px){
 
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+    .pasteleria {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        display: grid;
+        grid-template-areas:
+            "card1 card2" 
+            "card3 ard4"
+            "card5 card6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
     .bannerContener{
         display: grid;
         grid-template-areas:
@@ -10,6 +27,7 @@
         justify-items: center;
     }
     .contacto {
+        height: 125%;
         .formulario {
             width: 100%;
         }
@@ -38,29 +56,33 @@
     .textH2 {
         font-size: 0.8em;
     }
+    iframe {
+        width: 100%;
+    }
     .bannerContener{
         display: grid;
         grid-template-areas:
         "banner1"
         "banner2";
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         justify-items: center;
     }
-
     .pasteleria {
+        margin-top: 45px;
+        margin-bottom: 35px;
         display: grid;
         grid-template-areas:
-        "pPanificado"
-        "galeria1" 
-        "galeria2"
-        "galeria3" 
-        "galeria4";
+            "card1"
+            "card2" 
+            "card3"
+            "Card4"
+            "card5"
+            "card6";
         grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 30px;
-        padding-bottom: 50px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 35px;
     }
     .contacto {
         .formulario {

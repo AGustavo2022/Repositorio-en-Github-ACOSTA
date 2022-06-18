@@ -18,6 +18,7 @@ main {
     background-size: cover;
     background-position: center center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -41,13 +42,18 @@ main {
     grid-area: textH2;
     text-align: center;
     padding-bottom: 25px;
+    font-family: $font-hero;
+    color: rgba(0, 0, 0, 0.596);
+
 }
 .articulo1 {
     grid-area: articulo1;
     align-self: center;
-    text-align: center;    
+    text-align: center;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
-
 .img1 {
     grid-area: img1;
     justify-self: start;
@@ -62,11 +68,17 @@ main {
     grid-area: articulo2;
     align-self: center;
     text-align: center;
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 .articulo3 {
     grid-area: articulo3;
     align-self: center;
     text-align: center;
+    &:hover {
+        transform: scale(1.3);
+    }
 }
 .img3 {
     grid-area: img3;
@@ -105,6 +117,12 @@ main {
     text-align: center;
     }
 }
+
+iframe {
+    width: 660px;
+    height: 415px;
+}
+
 //PANIFICADO
 .menuCarta {
     max-width: 500px;
@@ -117,54 +135,49 @@ main {
     .carta {
     border: $border-caja;
     border-radius: 10px;
-    } 
+    }
 }
 //PASTELERIA
 .pasteleria {
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: grid;
     grid-template-areas:
-    "pPanificado pPanificado"
-    "galeria1 galeria2"
-    "galeria3 galeria4";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    justify-items: center;
-    gap: 30px;
-    padding-bottom: 50px;
+        "card1 card2 card3"
+        "card4 card5 card6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
 }
-.cardConteiner {
-    margin: auto;
-    padding: 20px;
-    width: 200px;
-    height: 350px;
-    border: $border-caja;
-    background-color: rgba(255, 166, 0, 0.205);
-    border-radius: 10px;
+.cardPanaderia {
+    padding-bottom: 15px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-}
-.pPasteleria {
-    grid-area: pPanificado;
-    padding-top: 50px;
-    padding-bottom: 60px;
-}
-.pGaleria1 {
-    grid-area: galeria1;
-}
-.pGaleria2 {
-    grid-area: galeria2;
-}
-.pGaleria3 {
-    grid-area: galeria3;
-}
-.pGaleria4 {
-    grid-area: galeria4;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(105, 105, 105, 0.404);
+    &:hover {
+        transform: scale(1.1);
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        padding: 10px;
+        justify-content: center;
+    }
+    button {
+        padding-bottom:  10px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 //CONTACTO
 .contacto {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
