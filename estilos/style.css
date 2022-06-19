@@ -56,7 +56,7 @@ main {
 
 .hero {
   max-width: auto;
-  height: 100vh;
+  height: 80vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img1.jpg);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img1.jpg);
   background-repeat: no-repeat;
@@ -81,7 +81,7 @@ main {
 }
 
 .sectionPrincipal {
-  padding-top: 20px;
+  padding-top: 5px;
   padding-bottom: 50px;
   display: -ms-grid;
   display: grid;
@@ -99,6 +99,7 @@ main {
   -ms-grid-column-span: 2;
   grid-area: textH2;
   text-align: center;
+  padding-top: 50px;
   padding-bottom: 25px;
   font-family: "Macondo", cursive;
   color: rgba(0, 0, 0, 0.596);
@@ -117,24 +118,6 @@ main {
 .articulo1:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.img1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: img1;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  width: 100%;
-}
-
-.img2 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: img2;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  width: 100%;
 }
 
 .articulo2 {
@@ -167,6 +150,24 @@ main {
           transform: scale(1.3);
 }
 
+.img1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img1;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  width: 100%;
+}
+
+.img2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img2;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  width: 100%;
+}
+
 .img3 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
@@ -183,7 +184,7 @@ main {
 
 .heroNosotros {
   max-width: auto;
-  height: 100vh;
+  height: 80vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.301)), to(rgba(0, 0, 0, 0.13))), url(../img/img3.jpg);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.301), rgba(0, 0, 0, 0.13)), url(../img/img3.jpg);
   background-repeat: no-repeat;
@@ -267,6 +268,42 @@ iframe {
   row-gap: 40px;
 }
 
+.card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+}
+
+.card3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card3;
+}
+
+.card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card4;
+}
+
+.card5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card5;
+}
+
+.card6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: card6;
+}
+
 .cardPanaderia {
   padding-bottom: 15px;
   text-align: center;
@@ -283,7 +320,7 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(105, 105, 105, 0.404);
+  background-color: beige;
 }
 
 .cardPanaderia:hover {
@@ -312,7 +349,7 @@ iframe {
 }
 
 .contacto {
-  height: 90vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,6 +359,7 @@ iframe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: rgba(0, 0, 0, 0.596);
 }
 
 .contacto .formulario {
@@ -381,6 +419,18 @@ footer p {
 }
 
 @media screen and (max-width: 800px) {
+  .articulo1:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .articulo2:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .articulo3:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
   iframe {
     width: 560px;
     height: 315px;
@@ -390,7 +440,7 @@ footer p {
     margin-bottom: 35px;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "card1 card2"  "card3 ard4" "card5 card6";
+        grid-template-areas: "card1 card2"  "card3 card4" "card5 card6";
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -398,6 +448,10 @@ footer p {
     -webkit-column-gap: 30px;
             column-gap: 30px;
     row-gap: 30px;
+  }
+  .cardPanaderia:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   .bannerContener {
     display: -ms-grid;
@@ -425,6 +479,12 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
   .sectionPrincipal {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -438,11 +498,49 @@ footer p {
     justify-items: center;
     row-gap: 15px;
   }
-  .textH2 {
-    font-size: 0.8em;
+  .articulo1:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .articulo2:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .articulo3:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   iframe {
     width: 100%;
+  }
+  .pasteleria {
+    margin-top: 45px;
+    margin-bottom: 35px;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "card1" "card2"  "card3" "card4" "card5" "card6";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 35px;
+  }
+  .cardPanaderia:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .contacto .formulario {
+    padding-top: 25px;
+    width: 100%;
+    height: 100vh;
+  }
+  .contacto .formulario h1 {
+    font-size: 2em;
+  }
+  .contacto .formulario h3 {
+    font-size: 1.5em;
   }
   .bannerContener {
     display: -ms-grid;
@@ -453,30 +551,6 @@ footer p {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     justify-items: center;
-  }
-  .pasteleria {
-    margin-top: 45px;
-    margin-bottom: 35px;
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "card1" "card2"  "card3" "Card4" "card5" "card6";
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
-    row-gap: 35px;
-  }
-  .contacto .formulario {
-    width: 100%;
-    height: 100%;
-  }
-  .contacto .formulario h1 {
-    font-size: 2em;
-  }
-  .contacto .formulario h3 {
-    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */

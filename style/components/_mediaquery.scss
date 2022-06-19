@@ -1,5 +1,20 @@
 @media screen and (max-width: 800px){
 
+    .articulo1 {
+        &:hover {
+            transform: none;
+        }
+    }
+    .articulo2 {
+        &:hover {
+            transform: none;
+        }
+    }
+    .articulo3 {
+        &:hover {
+            transform: none;
+        }
+    } 
     iframe {
         width: 560px;
         height: 315px;
@@ -10,12 +25,17 @@
         display: grid;
         grid-template-areas:
             "card1 card2" 
-            "card3 ard4"
+            "card3 card4"
             "card5 card6";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 30px;
+    }
+    .cardPanaderia {
+        &:hover {
+            transform: none;
+        }
     }
     .bannerContener{
         display: grid;
@@ -42,7 +62,13 @@
 }
 
 @media screen and (max-width: 480px){
-
+    
+    h1 {
+            font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }    
     .sectionPrincipal {
         padding-top: 20px;
         padding-bottom: 50px;
@@ -60,11 +86,57 @@
         justify-items: center;
         row-gap: 15px;
     }
-    .textH2 {
-        font-size: 0.8em;
+    .articulo1 {
+        &:hover {
+            transform: none;
+        }
     }
+    .articulo2 {
+        &:hover {
+            transform: none;
+        }
+    }
+    .articulo3 {
+        &:hover {
+            transform: none;
+        }
+    } 
     iframe {
         width: 100%;
+    }
+    .pasteleria {
+        margin-top: 45px;
+        margin-bottom: 35px;
+        display: grid;
+        grid-template-areas:
+            "card1"
+            "card2" 
+            "card3"
+            "card4"
+            "card5"
+            "card6";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 35px;
+    }
+    .cardPanaderia {
+            &:hover {
+                transform: none;
+            }
+        }
+    .contacto {
+        .formulario {
+            padding-top: 25px;
+            width: 100%;
+            height: 100vh;
+            h1 {
+                font-size: 2em;
+            }
+            h3{
+                font-size: 1.5em;
+            }
+        }
     }
     .bannerContener{
         display: grid;
@@ -75,33 +147,4 @@
         grid-template-rows: 1fr;
         justify-items: center;
     }
-    .pasteleria {
-        margin-top: 45px;
-        margin-bottom: 35px;
-        display: grid;
-        grid-template-areas:
-            "card1"
-            "card2" 
-            "card3"
-            "Card4"
-            "card5"
-            "card6";
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        column-gap: 30px;
-        row-gap: 35px;
-    }
-    .contacto {
-        .formulario {
-            width: 100%;
-            height: 100%;
-            h1 {
-                font-size: 2em;
-            }
-            h3{
-                font-size: 1.5em;
-            }
-        }
-    }
-
 }
