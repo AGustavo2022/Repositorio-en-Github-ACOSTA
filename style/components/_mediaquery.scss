@@ -1,20 +1,19 @@
 @media screen and (max-width: 800px){
 
-    .articulo1 {
+    .articuloss {
         &:hover {
             transform: none;
         }
+    }
+    .articulo1 {
+        @extend .articuloss;
     }
     .articulo2 {
-        &:hover {
-            transform: none;
-        }
+        @extend .articuloss;
     }
     .articulo3 {
-        &:hover {
-            transform: none;
-        }
-    } 
+        @extend .articuloss;
+    }
     iframe {
         width: 560px;
         height: 315px;
@@ -62,7 +61,7 @@
 }
 
 @media screen and (max-width: 480px){
-    
+
     h1 {
             font-size: 3em;
     }
@@ -86,21 +85,6 @@
         justify-items: center;
         row-gap: 15px;
     }
-    .articulo1 {
-        &:hover {
-            transform: none;
-        }
-    }
-    .articulo2 {
-        &:hover {
-            transform: none;
-        }
-    }
-    .articulo3 {
-        &:hover {
-            transform: none;
-        }
-    } 
     iframe {
         width: 100%;
     }
@@ -120,11 +104,6 @@
         column-gap: 30px;
         row-gap: 35px;
     }
-    .cardPanaderia {
-            &:hover {
-                transform: none;
-            }
-        }
     .contacto {
         .formulario {
             padding-top: 25px;
