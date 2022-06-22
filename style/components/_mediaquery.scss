@@ -23,13 +23,21 @@
         margin-bottom: 35px;
         display: grid;
         grid-template-areas:
+            "tituloP tituloP"
             "card1 card2" 
             "card3 card4"
             "card5 card6";
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 30px;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        column-gap: 10px;
         row-gap: 30px;
+        .tituloP {
+            font-size: $font-tablet-h1;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.4em;
+        }
     }
     .cardPanaderia {
         &:hover {
@@ -46,12 +54,13 @@
         justify-items: center;
     }
     .contacto {
-        height: auto;
+        padding-top: 20%;
         .formulario {
+            margin-top: 50px;
             width: 100%;
             height: 100%;
             h1 {
-                font-size: 2.5em;
+                font-size: $font-tablet-h1;
             }
             h3{
                 font-size: 1.8em;
@@ -93,6 +102,7 @@
         margin-bottom: 35px;
         display: grid;
         grid-template-areas:
+            "tituloP"
             "card1"
             "card2" 
             "card3"
@@ -100,7 +110,7 @@
             "card5"
             "card6";
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 35px;
     }

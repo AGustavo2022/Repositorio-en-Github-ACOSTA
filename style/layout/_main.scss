@@ -89,6 +89,7 @@ main {
 }
 .parrafo {
     padding-top: 20px;
+    font-size: $font-tablet-p;
     text-align: center;
 }
 //NOSOTROS
@@ -115,7 +116,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h3 {
+    h2 {
         padding-top: 20px;
     }
     .pnosotros {
@@ -136,6 +137,9 @@ iframe {
     display: flex;
     flex-direction: column;
     text-align: center;
+    h1 {
+        font-size: $font-tablet-h1;
+    }
     .carta {
     border: $border-caja;
     border-radius: 10px;
@@ -147,13 +151,20 @@ iframe {
     margin-bottom: 40px;
     display: grid;
     grid-template-areas:
+        "tituloP tituloP tituloP"
         "card1 card2 card3"
         "card4 card5 card6";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto 1fr 1fr;
     column-gap: 30px;
     row-gap: 40px;
     justify-items: center;
+    .tituloP {
+        font-size: 3.5em;
+    }
+}
+.tituloP {
+    grid-area: tituloP;
 }
 .card1 {
     grid-area: card1;
@@ -182,11 +193,13 @@ iframe {
     justify-content: space-between;
     align-items: center;
     background-color: beige;
+    border-radius: 20px;
     &:hover {
         transform: scale(1.1);
     }
     img {
         width: 100%;
+        border-radius: 20px;
     }
     h3 {
         padding: 10px;
